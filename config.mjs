@@ -25,5 +25,5 @@ export default {
     /**
      * 添加到打包产物许可证行后的附加代码
      */
-    additionalCode: `window=this.window;document=this.document;location=this.location;navigator=this.navigator;var Arco=window.Arco||console.log("Arco is not installed.");`,
+    additionalCode: `window=this.window;document=this.document;location=this.location;navigator=this.navigator;`,
 }
