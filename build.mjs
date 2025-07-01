@@ -11,7 +11,8 @@ if (config.supportReact) {
         entryPoints: [process.argv[2]],
         bundle: true,
         outfile: process.argv[3],
-        format: 'cjs'
+        format: 'cjs',
+        allowOverwrite: true
     })
 
     code = fs.readFileSync(process.argv[3], 'utf8')
@@ -27,7 +28,8 @@ await esbuild.build({
     bundle: true,
     minify: true,
     outfile: process.argv[3],
-    format: 'cjs'
+    format: 'cjs',
+    allowOverwrite: true
 })
 
 // 添加版权信息与附加代码
